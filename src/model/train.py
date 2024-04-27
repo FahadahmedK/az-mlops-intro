@@ -101,7 +101,13 @@ def main(args):
 
 
 if __name__ == '__main__':
-    mlflow.set_experiment("your_experiment_name")
+    print("\n\n")
+    print("*" * 60)
+
+    mlflow.set_experiment("mlops-experiment")
     args = parse_args()
     with mlflow.start_run():
         main(args)
+
+    print("*" * 60)
+    print("\n\n")
